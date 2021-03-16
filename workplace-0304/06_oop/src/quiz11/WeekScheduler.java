@@ -5,13 +5,11 @@ import java.util.Scanner;
 public class WeekScheduler {
 
 	// field
-	private int nthWeek;
 	private Day[] week;
 	private String[] weekNames = {"일", "월", "화", "수", "목", "금", "토"};
 	private Scanner sc = new Scanner(System.in);
 	
-	public WeekScheduler(int nthWeek) {
-		this.nthWeek = nthWeek;
+	public WeekScheduler() {
 		week = new Day[7];
 		for (int i = 0; i < week.length; i++) 
 			week[i]  = new Day();
@@ -33,7 +31,7 @@ public class WeekScheduler {
 			case 4: searchSchedule(); break;
 			case 5: printAllSchedule(); break;
 			case 0: exit(); return; // run()메소드 종료
-			default : System.out.println("없는 작업입니다. 다시 입력하세요.");
+			default : System.out.println("알수없는 작업입니다. 다시 입력하세요.");
 			}
 		}
 	}
