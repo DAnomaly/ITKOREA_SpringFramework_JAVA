@@ -36,7 +36,7 @@ public class Seat {
 		if(name == null || name.isEmpty()) {
 			System.out.println("[Empty ]");
 		}else {
-			System.out.println("[Filled]"+name);
+			System.out.println("[Filled]"+name.charAt(0) + "*" + (name.length() > 2 ? name.charAt(name.length() - 1) : ""));
 		}
 	}
 	
