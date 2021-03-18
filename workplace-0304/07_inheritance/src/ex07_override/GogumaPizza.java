@@ -1,6 +1,6 @@
 package ex07_override;
 
-public class GogumaPizza extends Pizza{
+public class GogumaPizza extends Pizza {
 
 	// field
 	private String goguma;
@@ -18,5 +18,5 @@ public class GogumaPizza extends Pizza{
 		super.info();
 		System.out.println("goguma: " + goguma);
 	}
-	
+
 }
