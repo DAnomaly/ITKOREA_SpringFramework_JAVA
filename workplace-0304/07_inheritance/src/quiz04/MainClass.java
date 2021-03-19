@@ -7,6 +7,10 @@ public class MainClass {
 		Fighter fighter1 = new KoreanFighter("정찬성"); // 에너지 공력력은 렌덤생성
 		Fighter fighter2 = new GlobalFighter("에드가");
 		
+		System.out.println(">> 경기시작 <<");
+		fighter1.info();
+		fighter2.info();
+		
 		// 선빵 결정
 		boolean myTurn = Math.random() < 0.5;
 		do {

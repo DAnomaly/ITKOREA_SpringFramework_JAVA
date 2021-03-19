@@ -11,9 +11,9 @@ public abstract class Fighter {
 	// constructor
 	public Fighter(String name, int energy, int power) {
 		this.name = name;
-		this.energy = energy < 1 ? 1 : energy;
-		this.power = power < 1 ? 1 : power;
 		this.isAlive = true;
+		this.energy = energy;
+		this.power = power;
 	}
 
 	// abstract method
@@ -34,6 +34,8 @@ public abstract class Fighter {
 
 	public void setAlive(boolean isAlive) {
 		this.isAlive = isAlive;
+		if(!isAlive)
+			System.out.println(getName() + "은(는) 쓰러졌다!");
 	}
 
 	public int getEnergy() {
@@ -42,6 +44,8 @@ public abstract class Fighter {
 
 	public void setEnergy(int energy) {
 		this.energy = energy;
+		if(energy <= 0)
+			setAlive(false);
 	}
 
 	public int getPower() {
@@ -50,6 +54,10 @@ public abstract class Fighter {
 
 	public void setPower(int power) {
 		this.power = power;
+	}
+	
+	public void info() {
+		System.out.printf("%4s energy : %3d, power : %3d\n",getName(), getEnergy(), getPower() );
 	}
 
 }
