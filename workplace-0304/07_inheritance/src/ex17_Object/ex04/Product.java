@@ -14,4 +14,18 @@ public class Product {
 	private String manufacturer;
 	private String date;
 
+	// override
+	@Override
+	public boolean equals(Object obj) {
+		if(this == obj)
+			return true;
+		
+		if(!(obj instanceof Product))
+			return false;
+		else {
+			Product pro = (Product)obj;
+			return (this.getModel()).equals(pro.getModel()) && (this.getManufacturer()).equals(pro.getManufacturer());  
+		}
+	}
+	
 }
