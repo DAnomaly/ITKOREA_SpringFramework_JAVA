@@ -16,3 +16,6 @@ SELECT * FROM STAFF;
 
 -- no의 최대값
 SELECT MAX(no) FROM staff;
+
+-- 이 계정에 생성된 TABLE의 정보 출력
+SELECT * FROM TAB;
