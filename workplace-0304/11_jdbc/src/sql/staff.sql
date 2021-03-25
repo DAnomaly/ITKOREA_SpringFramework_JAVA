@@ -13,3 +13,6 @@ CREATE TABLE staff
 
 -- staff 테이블 검색
 SELECT * FROM STAFF;
+
+-- no의 최대값
+SELECT MAX(no) FROM staff;

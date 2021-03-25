@@ -6,7 +6,6 @@ public class StaffMainClass {
 
 		new StaffManager().execute();
 		
-		
 	}
 	
 }

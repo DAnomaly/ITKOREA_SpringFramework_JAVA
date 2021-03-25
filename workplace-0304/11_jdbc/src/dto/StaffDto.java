@@ -47,4 +47,11 @@ public class StaffDto {
 		this.hireDate = hireDate;
 	}
 	
+	@Override
+	public String toString() {
+		return "[no=" + no + ", name=" + name + ", department=" + department + ", hireDate=" + hireDate + "]";
+	}
+	
+	
+	
 }
