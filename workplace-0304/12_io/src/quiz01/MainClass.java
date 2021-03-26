@@ -39,6 +39,7 @@ public class MainClass {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		sc.close();
 	}
 	
 }
